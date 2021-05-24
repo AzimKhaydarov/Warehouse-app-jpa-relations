@@ -1,0 +1,58 @@
+### MEASUREMENT
+POST http://localhost:6464/measurement
+Content-Type: application/json
+
+{
+  "name": "dm",
+  "active": true
+}
+
+###
+GET http://localhost:6464/measurement/all
+
+
+
+###
+GET http://localhost:6464/measurement/10
+
+###
+PUT http://localhost:6464/measurement/4
+Content-Type: application/json
+
+{
+  "name": "m",
+  "active": true
+}
+
+###
+DELETE http://localhost:6464/measurement/5
+
+
+### CURRENCY
+POST http://localhost:6464/currency
+Content-Type: application/json
+
+{
+  "name": "soum",
+  "active": true
+}
+
+###
+GET http://localhost:6464/curency/all
+
+
+
+###
+GET http://localhost:6464/currency/5
+
+###
+PUT http://localhost:6464/currency/4
+Content-Type: application/json
+
+{
+  "name": "euro",
+  "active": true
+}
+
+###
+DELETE http://localhost:6464/currency/5
